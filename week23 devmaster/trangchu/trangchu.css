@@ -1,0 +1,397 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a, a:hover, a:active, a:visited{
+  text-decoration: none;
+}
+
+#navbarNav a{
+  font-family: "Gotham-Medium";
+  font-size: 1rem;
+  color: #000;
+  display: block !important;
+  padding-left: 2rem !important;
+}
+header .navbar{
+  padding: .25rem 0rem  !important;
+}
+header .nav-link {
+  padding: 0.25rem;
+}
+header ul li{
+  position: relative;
+}
+header ul li.active:before {
+  position: absolute;
+  content:'';
+  width: 50%;
+  height: .2rem;
+  top: 100%;
+  left: 2rem;
+  background-color: #bd945f;
+  animation: menuHover .2s ease-in 1;
+}
+@keyframes menuHover{
+  from{ width : 30px  ; opacity: 0; }
+  to{ width: 60px; opacity: 1 ;}
+}
+#banner{
+  position: relative;
+  height: 100%;
+}
+#banner .container{
+  position: relative;
+  height: 100%;
+}
+.banner-box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+}
+
+.banner-box .item{
+  position: absolute;
+  top:40%;
+  transform: translateY(-50%);
+  width: 70%;
+  left: 3rem;
+}
+#banner h2:nth-child(1){
+  color: #2c2e53;
+  font-family: "Gotham-Ultra";
+  font-size: 2.5rem;
+}
+#banner h2:nth-child(2){
+  color: #bd945f;
+  font-family: "Gotham-Ultra";
+  font-size: 2.5rem;
+}
+#banner p{
+  font-family: "Gotham-Medium";
+  font-size: 1rem;
+  width: 65%;
+}
+#banner a{
+  background-color: #bd945f; 
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-family: "Gotham-Ultra";
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+/* catalog  */
+#catelog {
+  background-color: #f3f3f3;
+  padding-bottom: 4rem;
+}
+
+.catalog-box{
+  position: relative;
+  width: 100%;
+  margin-top: -3rem;
+}
+#catelog .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 1.5rem 2.2rem 1.5rem;
+}
+
+#catelog  .item a{
+  color: #000;
+  font-size: 19px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.section-title {
+  margin-top: 5rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.section-title h1{
+  position: relative;
+  display: inline;
+  font-weight: 800;
+}
+
+.section-title h1::after {
+  position: absolute;
+  content:'';
+  width: 50%;
+  height: 0.3rem;
+  left: 25%;
+  bottom: -1rem;
+  background-color: #bd945f;
+}
+
+.san-pham-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.list-san-pham{
+  width: 100%;
+}
+
+.san-pham-wrapper .sp-item{
+  width: 100%;
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.san-pham-wrapper img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.san-pham-wrapper p,.san-pham-wrapper b {
+  margin: 0;
+}
+
+.star {
+  color: orange;
+}
+
+.san-pham-wrapper p{
+  color: gray;
+}
+
+.button-wrapper a {
+  font-size: 40px;
+  color: orange;
+  position: absolute;
+  top: 30%;
+}
+
+.button-wrapper .btn-prev {
+  left: -2rem;
+}
+
+.button-wrapper .btn-next {
+  right: -2rem;
+}
+
+/* about us */
+
+#aboutus {
+  background-image: url(../img/ve-chung-toi/bg-about-us.jpg);
+  padding-top: 4rem;
+  position: relative;
+  width: 100%;
+}
+
+#aboutus::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+#aboutus h1 {
+  color: white;
+}
+
+.aboutus_left img {
+  width: 100%;
+}
+
+.aboutus_content {
+  position: relative;
+  z-index: 1;
+}
+
+#aboutus h2 {
+  color: white;
+  font-size: 33px;
+}
+
+.aboutus_right p {
+  color: white;
+  font-size: 12px;
+}
+
+.ask-item {
+  background-color: white;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.ask-title {
+  margin-left: 1.6rem;
+}
+
+.ask-item h3 {
+  margin: 0;
+  color: orange;
+}
+
+/* tin tuc */
+.news_left {
+  background-image: url(../img/tin-tuc/tintuc-1.jpg);
+  height: 525px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+}
+
+.news_left .news_left_content{
+  background-color: burlywood;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.news_left_content h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.news_left_content p {
+  font-size: 12px;
+}
+
+.news_right_item {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.news_right_item img {
+  margin-right: 25px;
+}
+
+.news_right_content h3{
+  color: orange;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.news_right_content p {
+  font-size: 10px;
+  color: gray;
+  text-align: justify;
+}
+
+.btn-xem-them {
+  margin-top: 1.5rem;
+}
+
+.btn-xem-them a, .btn-xem-them i{
+  color: orange;
+  font-size: 20px;
+}
+
+/* doi tac */
+
+#doitac {
+  margin-bottom: 5rem;
+}
+
+#doitac img {
+  max-width: 14.28571428571429%;
+}
+
+/* lien he*/
+
+.lienhe_left h3{
+  position: relative;
+  display: inline;
+  color: white;
+}
+
+.lienhe_left h3::after {
+  position: absolute;
+  content:'';
+  width: 40%;
+  height: 0.3rem;
+  left: 0;
+  bottom: -1rem;
+  background-color: white;
+}
+
+.lienhe_left {
+  padding-top: 2rem;
+}
+
+#lienhe{
+  width: 100%;
+  background-image: url(../img/lienhe-bg.jpg);
+  padding: 4rem;
+}
+
+#lienhe p {
+  color: white;
+}
+
+.lienhe_right form {
+  width: 100%;
+}
+
+#lienhe input{
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  width: 70%;
+  margin-right: 1rem;
+}
+
+#lienhe button {
+  padding: 0.5rem 1rem;
+  width: 20%;
+  border: none;
+  outline: none;
+}
+
+/*footer*/
+
+footer{
+  background-color: #363636;
+  padding: 2rem 0;
+}
+
+footer .lienhe_left {
+  margin-bottom: 1.5rem;
+}
+
+footer h3 {
+  color: white;
+}
+
+footer p, footer i, footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer_info i {
+  margin-right: 5px;
+}
+
+.footer_link i {
+  font-size: 40px;
+  margin: 5px;
+  color: white;
+}
